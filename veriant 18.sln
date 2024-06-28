@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "veriant 18", "veriant 18\veriant 18.csproj", "{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27EADD1C-1F61-43C1-8F2D-925E04118666}
+	EndGlobalSection
+EndGlobal

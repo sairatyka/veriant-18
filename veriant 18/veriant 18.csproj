@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48A86C30-2AB1-47A1-99DD-3B7C19A5F470}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>veriant_18</RootNamespace>
+    <AssemblyName>veriant 18</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="database__connect.cs" />
+    <Compile Include="DobavitDogovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavitDogovor.Designer.cs">
+      <DependentUpon>DobavitDogovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavitKomPredolzh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavitKomPredolzh.Designer.cs">
+      <DependentUpon>DobavitKomPredolzh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavitPostavshik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavitPostavshik.Designer.cs">
+      <DependentUpon>DobavitPostavshik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavitSotrydnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavitSotrydnik.Designer.cs">
+      <DependentUpon>DobavitSotrydnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DobavitTovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DobavitTovar.Designer.cs">
+      <DependentUpon>DobavitTovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DogovorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DogovorForm.Designer.cs">
+      <DependentUpon>DogovorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KomPredlozhFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KomPredlozhFrom.Designer.cs">
+      <DependentUpon>KomPredlozhFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostavshikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostavshikForm.Designer.cs">
+      <DependentUpon>PostavshikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SotrydnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrydnikForm.Designer.cs">
+      <DependentUpon>SotrydnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TovarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TovarForm.Designer.cs">
+      <DependentUpon>TovarForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DobavitDogovor.resx">
+      <DependentUpon>DobavitDogovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavitKomPredolzh.resx">
+      <DependentUpon>DobavitKomPredolzh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavitPostavshik.resx">
+      <DependentUpon>DobavitPostavshik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavitSotrydnik.resx">
+      <DependentUpon>DobavitSotrydnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DobavitTovar.resx">
+      <DependentUpon>DobavitTovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DogovorForm.resx">
+      <DependentUpon>DogovorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KomPredlozhFrom.resx">
+      <DependentUpon>KomPredlozhFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostavshikForm.resx">
+      <DependentUpon>PostavshikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SotrydnikForm.resx">
+      <DependentUpon>SotrydnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TovarForm.resx">
+      <DependentUpon>TovarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
